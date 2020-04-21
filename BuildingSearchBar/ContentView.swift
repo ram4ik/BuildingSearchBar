@@ -9,8 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var searchText = ""
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            SearchBar(text: $searchText)
+                .padding(.top, 30)
+            
+        }
     }
 }
 
